@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #F8F8F8;
+    font-family: 'Poppines', sans-serif;
+}
+
+/* Navigation */
+/* Relocate navigation btn */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding: 30px 0px;
+}
+
+/* Text in navigation */
+nav a {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.1s ease 0s;
+}
+
+/* Applied transition */
+nav a:hover {
+    transform: translateY(-5px);
+    text-decoration: underline;
+}
+
+/* Logo */
+nav a img {
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 3px;
+}
+
+/*  */
+/* Path */
+.upper-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 12%;
+}
+
+.path {
+    display: flex;
+    gap: 12px;
+}
+
+.path a {
+    color: black;
+}
+
+/*  */
+/* Mid-container */
+.mid-container {
+    margin-top: 40px;
+    /* margin-left: 12%;
+    margin-right: 12%;
+    */
+}
+
+.sub-mid-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 100px;
+}
+
+/* Sidebar */
+aside {
+    display: flex;
+    flex-direction: column;
+    padding: 64px;
+    gap: 32px;
+}
+
+.product-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.product-list {
+    display: flex;
+    gap: 12px;
+}
+
+.category-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.category-list {
+    display: flex;
+    gap: 12px;
+}
+
+.brand-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.brand-list {
+    display: flex;
+    gap: 12px;
+}
+
+/*  */
+/* Cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 80%;
+    justify-content: center;
+    gap: 64px;
+    padding: 12px 0px;
+}
+
+.cards img {
+    width: 300px;
+}
+
+/* Card-one */
+.card-one {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    gap: 24px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.laptop-images {
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.img-one {
+    position: absolute;
+    opacity: 1;
+    transition: all .3s ease;
+}
+
+.img-two {
+    position: absolute;
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.img-two:hover {
+    position: absolute;
+    opacity: 1;
+}
+
+.laptop-images:hover .img-one {
+    opacity: 0;
+}
+
+.card-one a {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: black;
+}
+
+.laptops-screen {
+    display: flex;
+    gap: 12px;
+}
+
+.laptops-screen p {
+    padding: 4px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.laptops-overview ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.laptops-overview ul,
+li {
+    padding-left: 20px;
+}
+
+/* Card-two */
+.card-two {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    gap: 24px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.laptop-images {
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.img-one {
+    position: absolute;
+    opacity: 1;
+    transition: all .3s ease;
+}
+
+.img-two {
+    position: absolute;
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.img-two:hover {
+    position: absolute;
+    opacity: 1;
+}
+
+.laptop-images:hover .img-one {
+    opacity: 0;
+}
+
+.card-two a {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: black;
+}
+
+.laptops-screen {
+    display: flex;
+    gap: 12px;
+}
+
+.laptops-screen p {
+    padding: 4px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.laptops-overview ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.laptops-overview ul,
+li {
+    padding-left: 20px;
+}
+
+/* Card-three */
+.card-three {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    gap: 24px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.laptop-images {
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.img-one {
+    position: absolute;
+    opacity: 1;
+    transition: all .3s ease;
+}
+
+.img-two {
+    position: absolute;
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.img-two:hover {
+    position: absolute;
+    opacity: 1;
+}
+
+.laptop-images:hover .img-one {
+    opacity: 0;
+}
+
+.card-three a {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: black;
+}
+
+.laptops-screen {
+    display: flex;
+    gap: 12px;
+}
+
+.laptops-screen p {
+    padding: 4px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.laptops-overview ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.laptops-overview ul,
+li {
+    padding-left: 20px;
+}
+
+/* Card-four */
+.card-four {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    gap: 24px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.laptop-images {
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.img-one {
+    position: absolute;
+    opacity: 1;
+    transition: all .3s ease;
+}
+
+.img-two {
+    position: absolute;
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.img-two:hover {
+    position: absolute;
+    opacity: 1;
+}
+
+.laptop-images:hover .img-one {
+    opacity: 0;
+}
+
+.card-four a {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: black;
+}
+
+.laptops-screen {
+    display: flex;
+    gap: 12px;
+}
+
+.laptops-screen p {
+    padding: 4px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.laptops-overview ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.laptops-overview ul,
+li {
+    padding-left: 20px;
+}
+
+/* Cad-five */
+.card-five {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    gap: 24px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.laptop-images {
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.img-one {
+    position: absolute;
+    opacity: 1;
+    transition: all .3s ease;
+}
+
+.img-two {
+    position: absolute;
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.img-two:hover {
+    position: absolute;
+    opacity: 1;
+}
+
+.laptop-images:hover .img-one {
+    opacity: 0;
+}
+
+.card-five a {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: black;
+}
+
+.laptops-screen {
+    display: flex;
+    gap: 12px;
+}
+
+.laptops-screen p {
+    padding: 4px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.laptops-overview ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.laptops-overview ul,
+li {
+    padding-left: 20px;
+}
+
+/* Card-six */
+.card-six {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    gap: 24px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.laptop-images {
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.img-one {
+    position: absolute;
+    opacity: 1;
+    transition: all .3s ease;
+}
+
+.img-two {
+    position: absolute;
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.img-two:hover {
+    position: absolute;
+    opacity: 1;
+}
+
+.laptop-images:hover .img-one {
+    opacity: 0;
+}
+
+.card-six a {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: black;
+}
+
+.laptops-screen {
+    display: flex;
+    gap: 12px;
+}
+
+.laptops-screen p {
+    padding: 4px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.laptops-overview ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.laptops-overview ul,
+li {
+    padding-left: 20px;
+}
